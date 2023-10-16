@@ -1,0 +1,635 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'outfit';
+    list-style: none;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+/* testing */
+
+.slider{
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    
+}
+
+.slide{
+    display: block;
+    width: 100vw;
+    height: 418px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    padding-top: 181px;
+    padding-left: 70px;
+    
+}
+.slide:first-child{
+    background-image:url('/assets/ikan2.png');
+    background-size: cover;
+}
+.slide:nth-child(2){
+    background-image:url('/assets/tempat-pelelangan-ikan-tegalsari-kota-tegal.jpg');
+    background-size: cover;
+}
+.slide:nth-child(3){
+    background-image:url('/assets/kapal.jpeg');
+    background-size: cover;
+}
+.slide button{
+    width: 186px;
+    height: 56px;
+    border-radius: 10px;
+    background: rgba(31, 33, 29, 0.60);
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+}
+.slide button:hover{
+    transition: all 0.3s ease-in-out;
+    background: rgba(31, 33, 29, 0.80);
+    color: #FFF;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    position: relative;
+    z-index: 100;
+}
+
+.dot {
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid white;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.active-dot {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.set-jumbotron {
+    width: 100vw;
+    height: 418px;
+    margin-bottom: 21px;
+    position:-ms-page;
+}
+
+/* testing */
+
+
+.main-content {
+    width: 100vw;
+    height: fit-content;
+}
+
+/* card */
+
+.container-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.box-card-content{
+    width: 304px;
+    height: 241px;
+    /* background-color: rgb(255, 255, 255); */
+    margin-left: 35px;
+    margin-right: 35px;
+    display: block;
+    margin-bottom: 30px;
+}
+.box-card-content img{
+    width: 304.4px;
+    height: 150px;
+}
+.text-content-card{
+    margin: 10px;
+    padding-bottom: 10px;
+    color: #000;
+    font-family: Outfit;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.text-content-card button{
+    width: 73px;
+    height: 24px;
+    border-radius: 10px;
+    background: rgba(31, 33, 29, 0.60);
+    color: #FFF;
+    /*  */
+    font-family: Outfit;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /*  */
+    border: none;
+}
+
+
+/* Navigation Bar */
+
+.nav-bar {
+    width: 100%;
+    padding: 10px 0 2vw 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: medium;
+    background-image: url('../../assets/bg-nav.png');
+}
+
+.nav-bar img {
+    position: relative;
+    left: 3%;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.nav-bar nav {
+    background-color: #333;
+}
+
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-right: 0.35vw;
+}
+
+.nav-bar li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 2vw 2vw 0 2vw ;
+    position: relative; 
+}
+
+.nav-bar li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #007bff; 
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease; 
+}
+
+.nav-bar li a:hover::before {
+    width: 100%; 
+}
+
+
+
+/* Data Section */
+
+.data-section {
+    width: 100%;
+    height: max-content;
+}
+
+.data-section h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: #404040;
+    padding: 90px 0 20px 0;
+}
+
+.data-section .content{
+    display: flex;
+    justify-content: center;
+    background-color: #A0A0A0;
+    width: max-content;
+    margin: 1vw auto 0 auto;
+    text-align: center;
+    padding: 1.7vw 2vw 4.65vw;
+    border-radius: 10px;
+}
+
+.data-section .content h3, .data-section .content h4{
+    font-weight: bolder;
+    font-size: 2vw;
+}
+
+.data-section .content .weight, .data-section .content .price,.data-section .content .market{
+    margin: 0 5vw;
+}
+
+.data-section .content .weight h4, .data-section .content .price h4,.data-section .content .market h4{
+    padding: 3.5vw 0 0 0;
+}
+
+
+/* Pelabuhan section */
+
+.pelabuhan-section {
+    width: 100%;
+    height: fit-content;
+}
+
+.pelabuhan-section h1{
+    text-align: center;
+    padding: 90px 0;
+    font-weight: bold;
+    font-size: 40px;
+    color: #404040;
+}
+
+.pelabuhan-section .first-pelabuhan, .pelabuhan-section .third-pelabuhan{
+    display: flex;
+    padding: 0 0 3.5vw 0;
+    position: relative;
+    left: 3.8vw;
+    width: max-content;
+}
+
+.pelabuhan-section .first-pelabuhan .content, .pelabuhan-section .third-pelabuhan .content{
+    position: relative;
+    left: 2vw;
+    transform: translate(0,38%);
+}
+
+.pelabuhan-section .second-pelabuhan{
+    display: flex;
+    padding: 3.5vw 0 3.5vw 0;
+    justify-content: right;
+}
+
+.pelabuhan-section .second-pelabuhan img{
+    position: relative;
+    right: 3.8vw;
+    border-top: 2px solid black;
+}
+
+.pelabuhan-section .second-pelabuhan .content{
+    position: relative;
+    right: 5.9vw;
+    transform: translate(0,35%);
+}
+
+.pelabuhan-section .first-pelabuhan .content h2, .pelabuhan-section .second-pelabuhan .content h2,.pelabuhan-section .third-pelabuhan .content h2{
+    font-weight: bold;
+    font-size: 2vw;
+    color: #404040;
+}
+
+.pelabuhan-section .first-pelabuhan .content p,.pelabuhan-section .second-pelabuhan .content p,.pelabuhan-section .third-pelabuhan .content p{
+    font-size: 1.4vw;
+    padding: 5px 0;
+}
+
+.pelabuhan-section .first-pelabuhan .content button,.pelabuhan-section .second-pelabuhan .content button,.pelabuhan-section .third-pelabuhan .content button{
+    width: max-content;
+    padding: 0.7vw;
+    background-color: rgba(31, 33, 29, 0.3);
+    border-radius: 5px;
+    border-style: none !important;
+    color: white;
+}
+
+.pelabuhan-section .second-pelabuhan .content button{
+    position: relative;
+    left: 100%;
+    transform: translate(-7.5vw);
+}
+
+.pelabuhan-section .content{
+    width: 41vw;
+}
+
+.pelabuhan-section img{
+    width: 41.7vw;
+    height: 27.8vw;
+}
+
+.pelabuhan-section .maps {
+    padding: 100px 0 60vw 0;
+}
+
+.pelabuhan-section .maps img{
+    width: 83.3vw;
+    height: 48.6vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 20px solid #D9D9D9;
+}
+
+.pelabuhan-section .maps .marker-1,.pelabuhan-section .maps .marker-2,.pelabuhan-section .maps .marker-3  {
+    width: 5vw;
+    height: 5vw;
+    z-index: 10;
+    border: none;
+}
+
+.pelabuhan-section .maps .marker-1{
+    left: 20vw;
+    margin-top: 11vw;
+}
+
+.pelabuhan-section .maps .marker-2 {
+    left: 63.5vw;
+    margin-top: 16.7vw;
+}
+
+.pelabuhan-section .maps .marker-3 {
+    left: 66vw;
+    margin-top: 23vw;
+}
+
+
+/*  */
+.desc-page {
+    overflow: hidden;
+}
+
+.small-box-left{
+    max-width: 17.9vw ;
+    height: 300px;
+    background-color: #3B6B90;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.small-box-right{
+    max-width: 17.9vw;
+    height: 300px;
+    background-color: #3B6B90;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.box-content-fish{
+    width: 350px;
+    height: 300px;
+    display: block;
+    background-color: #114871;
+    border-radius: 15px;
+    margin-bottom: 24px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.box-core-content{
+    height: 100%;
+    padding-top: 24px;
+    width: 216px;
+    margin: auto;
+}
+.core-box-content-title .title-core-contetn{
+    color: #E8E8E8;
+    font-family: Outfit;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.core-box-content-title img{
+    width: 200px;
+    height: 100px;
+}
+.button-core-box-content{
+    width: 80px;
+    height: 32px;
+    border-radius: 5px;
+    border-style: none !important;
+    background-color: rgba(31, 33, 29, 0.30);
+    color: #FFF;
+    padding: 8px;
+    font-family: Outfit;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 30%;
+}
+.core-box-content-title{
+    color: #E8E8E8;
+    font-family: Outfit;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.desc-page{
+    height: fit-content;
+}
+.set-footer{
+    background-color: #114871;
+}
+.box-footer{
+    width: 100%;
+    height: 421px;
+    padding-top: 41px;
+    border-right: 1.5px solid black;
+}
+.box-footer img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.box-footer-last{
+    width: 100%;
+    height: 421px;
+    padding-top: 41px;
+}
+
+.set-list-footer li{
+    margin-bottom: 3px;
+}
+footer{
+    margin-top: 200px;
+}
+.set-row-footer-title{
+    color: #FFF;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    padding-top: 40px;        
+}
+.logo-footer{
+    margin-top: 139px;
+}
+.small-box-right {
+    position: relative;
+    right: 0;
+}
+
+
+@media screen and (max-width: 991px) {
+    .overview {
+        position: absolute;
+        margin-top: 450px !important;
+    }
+
+    .follow {
+        position: absolute;
+        margin-top: 700px !important;
+    }
+
+    .box-footer{
+        border-right: none;
+    }
+
+    .box-footer-last{
+        width: 100%;
+        margin-top: -100px !important;
+        padding-top: 0 ;
+        height: max-content;
+    }
+    .small-box-left,.small-box-right {
+        display: none;
+    }
+    /* .box-content-fish{
+        padding: 0 !important;
+        margin: 0 !important;
+    } */
+}
+
+@media screen and (max-width: 900px) {
+    .nav-bar {
+        font-size: 20px;
+    }
+
+    .pelabuhan-section .content button{
+        font-size: 10px !important;
+    }
+    
+    .pelabuhan-section .second-pelabuhan .content button{
+        position: relative;
+        left: 100%;
+        transform: translate(-9vw);
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    /* nav-bar */
+    .nav-bar {
+        background-color: rgb(45, 145, 220);
+        font-size: 20px;
+        display: block;
+    }
+    .nav-bar ul {
+        background-color: rgb(45, 145, 220);
+        display: block;
+    }
+
+    .nav-bar ul li  a {
+        width: fit-content;
+        margin: auto;
+    }
+
+    /* data-section */
+    .data-section h1{
+        font-size: 30px;
+    }
+
+    .data-section .content h3, .data-section .content h4{
+        font-size: 3vw;
+    }
+
+    /* pelabuhan-section */
+    .pelabuhan-section h1 {
+        font-size: 30px;
+        padding: 50px 0;
+    }
+
+    .pelabuhan-section .first-pelabuhan, .pelabuhan-section .second-pelabuhan,.pelabuhan-section .third-pelabuhan{
+        display: block;
+        /* background-color: red; */
+    }
+
+    .pelabuhan-section .third-pelabuhan{
+        padding : 200px 0 0 0;
+    }
+
+    .pelabuhan-section .second-pelabuhan {
+        width: max-content;
+        position: relative;
+        left: 3.8vw ;
+        padding: 50px 0 0 0;
+    }
+
+    .pelabuhan-section .first-pelabuhan img, .pelabuhan-section .second-pelabuhan img,.pelabuhan-section .third-pelabuhan img{
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .pelabuhan-section .second-pelabuhan img{
+        right: 0;
+    }
+
+    .pelabuhan-section .first-pelabuhan .content, .pelabuhan-section .second-pelabuhan .content,.pelabuhan-section .third-pelabuhan .content{
+        width: 90vw;
+    }
+
+    .pelabuhan-section .first-pelabuhan .content p, .pelabuhan-section .second-pelabuhan .content p,.pelabuhan-section .third-pelabuhan .content p{
+        font-size: 12px;
+    }
+
+    .pelabuhan-section .first-pelabuhan .content h2, .pelabuhan-section .second-pelabuhan .content h2,.pelabuhan-section .third-pelabuhan .content h2{
+        font-size: 18px;
+    }
+
+    .pelabuhan-section .second-pelabuhan .content{
+        position: absolute;
+        left: 3.8vw;
+        margin: 85vw 0 0 0;
+    }
+
+    .pelabuhan-section .second-pelabuhan button {
+        left: 9vw !important;
+        transform: translate(0%,0%);
+    }
+
+}
